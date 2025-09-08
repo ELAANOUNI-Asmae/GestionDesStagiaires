@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="16.6.6.5721"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model ID="{1C426BC6-7CF8-4E1A-A7A7-6FDEC5617927}" Loaded="No" Name="Gestion des stagiaires" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="MCD/Gestion des stagiaires.mcd"/>
+		<Model ID="{D0734C95-8866-409E-88DB-22E4C36CA1DB}" Loaded="No" Name="Gestion des stagiaires" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="MLD/Gestion des stagiaires.mld"/>
+		<Model ID="{06C61BFC-8CCB-4C36-9219-B3386FA60A87}" Loaded="No" Name="Gestion des stagiaires" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="MLD/Gestion des stagiaires.mpd"/>
+		<Model Expanded="Yes" ID="{D6CA2EFD-F57B-452B-8440-5179CBF0BDA7}" Name="ModeleConceptuelDonnees_1" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="Nouveau dossier/ModeleConceptuelDonnees_1.mcd"/>
+		<Model Expanded="Yes" ID="{04A14841-3442-4D03-9D3B-0B28F287544E}" Loaded="No" Name="ModeleConceptuelDonnees_2" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="Nouveau dossier/ModeleConceptuelDonnees_2.mcd"/>
+		<Model Expanded="Yes" ID="{F344C4C7-A83E-4AB0-8D69-0CF29D9C8641}" Loaded="No" Name="ModeleConceptuelDonnees_2" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="Nouveau dossier/ModeleConceptuelDonnees_2.mpd"/>
+		<Model Expanded="Yes" ID="{EA40ECED-D522-4637-AE23-202B7AF90B2F}" Loaded="No" Name="ModeleConceptuelDonnees_2" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="Nouveau dossier/ModeleConceptuelDonnees_2.mld"/>
+		<Model ID="{5B00B26C-5972-4030-9968-6A9A7A91E33F}" Name="Gestion des stagiaires" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="Nouveau dossier/Gestion des stagiaires/Gestion des stagiaires.prj"/>
+		<Model Expanded="Yes" ID="{C967BBD7-C2EB-4A1C-9913-C5A27FA84050}" Name="ModeleConceptuelDonnees" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="Nouveau dossier/Gestion des stagiaires/ModeleConceptuelDonnees.mld"/>
+		<Model Expanded="Yes" ID="{99D3A3CC-D1DA-4C1C-9108-BFE377215AF1}" Name="ModeleConceptuelDonnees" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="Nouveau dossier/Gestion des stagiaires/ModeleConceptuelDonnees.mpd"/>
+	</Local>
+	<BrowserModule Name="Repository"/>
+</Workspace>

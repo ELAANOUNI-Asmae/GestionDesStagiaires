@@ -1,0 +1,13 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {0.1}\textcolor {red}{Description Générale}}{2}{section.0.1}%
+\contentsline {section}{\numberline {0.2}\textcolor {red}{Composants Principaux}}{2}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Déclencheur (Trigger)}{2}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {0.2.2}Structure de Contrôle}{2}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {0.2.3}Traitement des Documents}{3}{subsection.0.2.3}%
+\contentsline {subsection}{\numberline {0.2.4}Analyse par IA}{4}{subsection.0.2.4}%
+\contentsline {subsection}{\numberline {0.2.5}Notification}{5}{subsection.0.2.5}%
+\contentsline {section}{\numberline {0.3}\textcolor {red}{Flux de Données}}{5}{section.0.3}%
+\contentsline {section}{\numberline {0.4}\textcolor {red}{Exécution}}{5}{section.0.4}%
+\contentsline {subsection}{\numberline {0.4.1}Cas 1 : Fichier Word}{5}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {0.4.2}Cas 2 : Fichier Pdf}{6}{subsection.0.4.2}%
+\contentsline {section}{\numberline {0.5}\textcolor {red}{Conclusion}}{6}{section.0.5}%

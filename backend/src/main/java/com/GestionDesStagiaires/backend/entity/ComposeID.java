@@ -1,0 +1,9 @@
+package com.GestionDesStagiaires.backend.entity;
+
+import java.io.Serializable;
+
+public class ComposeID implements Serializable {
+
+    private Long projetID;
+
+}

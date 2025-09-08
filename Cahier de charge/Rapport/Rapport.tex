@@ -1,0 +1,130 @@
+\documentclass{report}
+\usepackage[a4paper, top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage[hyphens]{url}
+\usepackage[pdfauthor = {{Asmae ELAANOUNI}}, pdftitle = {{devoir1}}, pdfstartview = Fit, pdfpagelayout = SinglePage, pdfnewwindow = true, bookmarksnumbered = true, breaklinks, colorlinks, linkcolor = black, urlcolor = black, citecolor = black, linktoc = all]{hyperref}
+\usepackage{graphicx}
+\usepackage{enumitem, pifont}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{enumitem, pifont}
+\setlist[itemize, 1]{label ={--}, itemsep =\baselineskip}
+\setlist[enumerate, 1]{label= \arabic*), itemsep=\baselineskip}
+\renewcommand{\arraystretch}{1}
+\usepackage{tocloft}
+\begin{document}
+
+\linespread{1}
+
+
+\begin{minipage}{0.5\linewidth}
+  \raggedright
+\includegraphics[width=0.6\linewidth]{yool.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\linewidth}
+  \raggedleft
+\includegraphics[width=0.65\linewidth]{logo.png}
+\end{minipage}
+\\
+
+
+\vspace{6cm}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.55mm}}
+
+\begin{center}
+\HRule \\[0.25cm]
+\huge\textbf{\underline{CdC: Plateforme de Gestion des Stagiaires}} \\[0.25cm]
+\HRule \\
+ [6cm]
+ \end{center}
+ \begin{center}
+   \Large\textbf{Version :} 1.0\\
+   \Large\textbf{Date :} Le \today\\
+   \Large\textbf{Auteur :} ELAANOUNI Asmae\\
+   \Large\textbf{Destinataires :} Équipe technique de Yool Education\\
+ \end{center}
+
+\clearpage
+\section*{Introduction}
+\subsection*{Contexte}
+La plateforme vise à simplifier la gestion administrative des stagiaires (inscription, suivi, évaluation) pour les responsables administratifs.
+\subsection*{Objectifs}
+\begin{itemize}
+  \item Centraliser les données des stagiaires.
+  \item Automatiser les tâches administratives (attestations, rapports).
+  \item Faciliter le suivi par les administrateurs.
+\end{itemize}
+\subsection*{Portée}
+\begin{itemize}
+  \item Inclus : Back-office administratif .
+  \item Exclu : Fonctionnalités pour les stagiaires/tuteurs (connexion, upload de documents).
+\end{itemize}
+\section*{Besoins Fonctionnels (Back-Office Administratif)}
+\subsection*{Gestion des stagiaires}
+\begin{itemize}
+  \item Ajout/Modification/Suppression des profils stagiaires (nom, prénom, formation, dates, encadrant académique/entreprise, Email, Téléphone (optionnel), ,type du stage, sujet de stage ).
+  \item Import/Export des données (Excel/CSV).
+  \item Recherche et filtres (par formation, statut, date).
+\end{itemize}
+\subsection*{Suivi administratif}
+\begin{itemize}
+  \item Génération automatique d’attestations de stage (modèles personnalisables).
+  \item Gestion des absences :\\
+    - Interface pour saisir les jours d’absence (date + motif).\\
+    - Calcul automatique du nombre total d’absences.\\
+    - Alertes si dépassement d’un seuil (ex : > 3 jours non justifiés).
+  \item Évaluation du stagiaire :
+    - Formulaire d’évaluation (note/commentaires) par l’administrateur.\\
+    - Grille de critères prédéfinis (ex : ponctualité, qualité du travail).\\
+    - Export PDF du bilan d’évaluation.
+  \item Historique des actions (logs des modifications).
+  \item Tableau de bord (stats : nombre de stagiaires par formation, etc.).
+  \item Système d’alerte automatique :\\
+    - Si un document manque → **notification visuelle** (badge rouge, icône warning).\\
+    - **Email automatique** à l’administrateur (ou liste de destinataires) en cas de dossier incomplet.\\
+    - **Rappel quotidien ou hebdomadaire** (paramétrable) tant que le dossier n’est pas complet.
+\end{itemize}
+\subsection*{Sécurité et accès}
+\begin{itemize}
+  \item Espace sécurisé (login/mot de passe pour les admins).
+  \item Rôles utilisateurs (ex : Admin full access / Lecteur seul).
+\end{itemize}
+\section*{Besoins Techniques}
+\subsection*{Front-End}
+\begin{itemize}
+  \item Technologies : HTML5, CSS3, JavaScript (Vanilla ou framework léger comme Alpine.js).
+  \item Responsive : Compatible bureau/tablette.
+  \item Navigateurs supportés : Chrome, Firefox, Edge (dernières versions).
+\end{itemize}
+\subsection*{Back-End}
+\begin{itemize}
+  \item Langage : PHP (Framework Laravel).
+  \item Base de données : MySQL (structure optimisée pour les jointures).
+  \item Sécurité : Protection contre les injections SQL, hachage des mots de passe.
+\end{itemize}
+\subsection*{Hébergement}
+\begin{itemize}
+  \item Serveur compatible PHP/MySQL (ex : Apache/Nginx).
+\end{itemize}
+\section*{Contraintes}
+\noindent- **Délai** : Livraison en 4 semaines/mois.\\
+- **RGPD** : Confidentialité des données stagiaires (anonymisation possible).\\
+\section*{ Livrables Attendus}
+\noindent- **Code source** (front + back) commenté.\\
+- **Base de données** (script SQL de création).\\
+- **Documentation technique** (installation, architecture).\\
+\section*{Organisation}
+\noindent- **Méthodologie** : Développement agile (sprints avec livraisons partielles).\\
+- **Points de suivi** : Réunions hebdomadaires.
+\section*{Critères d’Acceptation}
+\noindent- **Tests fonctionnels** : Vérification de l’ajout/génération d’attestations.\\
+- **Performance** : Temps de réponse < 1s pour les requêtes simples.\\
+- **Sécurité** : Audit des vulnérabilités (ex : OWASP).
+\end{document}
